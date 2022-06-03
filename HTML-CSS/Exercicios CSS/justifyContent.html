@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox - Justify content</title>
+    <style>   
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        } 
+        .container{
+            border: 1px solid black;
+            margin: 10px;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            color: white;
+            margin: 5px;
+        }
+
+        .center{
+            justify-content: center;
+        }
+
+        .start {
+            justify-content: flex-start;
+        }
+
+        .end {
+            justify-content: flex-end;
+        }
+
+        .space-around{
+            justify-content: space-around;
+        }
+
+        .space-between{
+            justify-content: space-between;
+        }
+
+        .space-evenly{
+            justify-content: space-evenly;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h3>Center:</h3>
+    <div class="container center">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Start:</h3>
+    <div class="container start">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>End:</h3>
+    <div class="container end">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-around:</h3>
+    <div class="container space-around">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-between:</h3>
+    <div class="container space-between">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-evenly:</h3>
+    <div class="container space-evenly">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+
+
+    *Flex grow ignora o justify content.
+</body>
+</html>
