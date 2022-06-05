@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox - Align content</title>
+    <style>   
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        } 
+        .container{
+            border: 1px solid black;
+            margin: 10px;
+            display: flex;
+            max-width: 200px;
+            height: 300px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: blueviolet;
+            color: white;
+            margin: 5px;
+            text-align: center; 
+            height: 100px;
+            flex: 1;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start {
+            align-content: flex-start;
+        }
+
+        .end {
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-evenly{
+            align-content: space-evenly;
+        }
+
+        .column {
+            flex-direction: column;
+            height: 150px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Flex direction: Row</h1>
+    <h3>Center:</h3>
+    <div class="container center">
+        <div class="item">item 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto adipisci, tempore, exercitationem ratione molestias impedit aut cum aliquam itaque, quasi ullam maxime omnis temporibus fuga eos nam vitae voluptas?</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Start:</h3>
+    <div class="container start">
+        <div class="item">item 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero unde numquam ad! Animi deleniti quibusdam fugit dolor unde quaerat, debitis necessitatibus laudantium dolorum? Nisi distinctio totam dicta mollitia velit iure.</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>End:</h3>
+    <div class="container end">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-around:</h3>
+    <div class="container space-around">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-between:</h3>
+    <div class="container space-between">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-evenly:</h3>
+    <div class="container space-evenly">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h1>Flex direction: Column</h1>
+    <h3>Center:</h3>
+    <div class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Start:</h3>
+    <div class="container start column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>End:</h3>
+    <div class="container end column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-around:</h3>
+    <div class="container space-around column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-between:</h3>
+    <div class="container space-between column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    <h3>Space-evenly:</h3>
+    <div class="container space-evenly column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+
+    *Tem que haver quebra de linha;
+    usar "flex" no flex item
+</body>
+</html>
